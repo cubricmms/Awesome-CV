@@ -11,4 +11,4 @@ resume.pdf: $(SRC_DIR)/resume.tex $(RESUME_SRCS)
 	$(CC) -output-directory=$(SRC_DIR) $<
 
 clean:
-	find -E $(SRC_DIR) -regex '.*\.(log|out|aux|pdf)' -exec rm {} \;
+	find -E $(SRC_DIR) -regex '.*\.(log|out|aux|pdf|gz)' -exec rm {} \;
